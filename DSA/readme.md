@@ -1,6 +1,6 @@
-## DSA
+# DSA
 
-### SORTING
+## SORTING
 
 [1. SELECTION SORT ](https://www.geeksforgeeks.org/problems/selection-sort/1) -> [SOLUTION](https://github.com/AJAYKE/SYSTEM-DESIGN/blob/main/DSA/sorting/selection_sort.py)
 
