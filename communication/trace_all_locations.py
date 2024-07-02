@@ -3,7 +3,13 @@ import socket
 import requests
 from scapy.all import traceroute
 
+'''
+sample output for each hop
+Geolocation: {'ip': '142.250.199.142', 'hostname': 'bom07s36-in-f14.1e100.net', 'city': 'Mumbai', 
+'region': 'Maharashtra', 'country': 'IN', 'loc': '19.0728,72.8826', 'org': 'AS15169 Google LLC', 
+'postal': '400017', 'timezone': 'Asia/Kolkata'}
 # IPinfo API token (replace with your actual token its very easy, just login and go to token)
+'''
 IPINFO_API_TOKEN = 'your ipinfo api token'
 
 def get_geolocation(ip):
@@ -40,7 +46,7 @@ def main():
                 print(f"Geolocation: {geolocation}")
 
     except PermissionError:
-        print("Permission denied: Could not open /dev/bpf0. Make sure to run the script with elevated privileges (sudo).")
+        print("Permission denied: Make sure to run the script with elevated privileges (sudo).")
 
 if __name__ == "__main__":
     main()
