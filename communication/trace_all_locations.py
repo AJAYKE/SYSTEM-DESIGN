@@ -4,6 +4,8 @@ import requests
 from scapy.all import traceroute
 
 '''
+if you want to know the path/route that ur packet travels over internet just execute this code and enter the domain name.
+
 sample output for each hop
 Geolocation: {'ip': '142.250.199.142', 'hostname': 'bom07s36-in-f14.1e100.net', 'city': 'Mumbai', 
 'region': 'Maharashtra', 'country': 'IN', 'loc': '19.0728,72.8826', 'org': 'AS15169 Google LLC', 
@@ -33,6 +35,7 @@ def main():
         visited_ips = set()
 
         for snd, rcv in result:
+            
             hop_ip = rcv.src
 
             # Check for Anycast IP
